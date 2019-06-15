@@ -1,10 +1,14 @@
 // Widescreens
 @include mediaXl {
-  
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 // Desxktops and Laptops
 @include mediaLg {
-
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 // Tablets and small laptops
 @include mediaMd {
@@ -56,6 +60,10 @@
 
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 // smartphones
 @include mediaSm {
@@ -63,5 +71,8 @@
     margin-top: 10vh;
     font-size: 42px;
 
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
